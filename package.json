@@ -1,0 +1,11 @@
+{
+  "name": "small-shop-restful-node",
+  "version": "1.0.0",
+  "description": "a small node shop project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "leul and amha",
+  "license": "ISC"
+}
