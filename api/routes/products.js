@@ -12,6 +12,7 @@ router.post('/', (req, res, next) => {
         message: 'Handiling POST requests to /products'
     });
 });
+<<<<<<< HEAD
 router.get('/:productId', (req, res, next) => {
     const id =req.params.productsId;
     if (id==='special'){
@@ -36,3 +37,7 @@ router.get('/:productId', (req, res, next) => {
         });
     })
 module.exports = router;
+=======
+
+module.exports = router;
+>>>>>>> c1b7adb1d293628bf97776ca8d5e5b0c30d9aa2a
