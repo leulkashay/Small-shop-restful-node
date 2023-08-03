@@ -12,10 +12,9 @@ router.post('/', (req, res, next) => {
         message: 'Handiling POST requests to /products'
     });
 });
-<<<<<<< HEAD
 router.get('/:productId', (req, res, next) => {
-    const id =req.params.productsId;
-    if (id==='special'){
+    const id =req.params.productId;
+    if (id === 's'){
         res.status(200).json({
             message: 'You discovered the special ID',
             id: id
@@ -23,21 +22,17 @@ router.get('/:productId', (req, res, next) => {
     } else{
         res.status(200).json({
             message: 'You passed an ID'
-        })
+        });
     }
     });
-    router.patch('/:productId', (req, res, next) => {
-        res.status(200).json({
-            message: 'Updated product!'
-        });
-    })
-    router.delete('/:productId', (req, res, next) => {
-        res.status(200).json({
-            message: 'Deleted product!'
-        });
-    })
+router.patch('/:productId', (req, res, next) => {
+    res.status(200).json({
+        message: 'Updated product!'
+    });
+});
+router.delete('/:productId', (req, res, next) => {
+    res.status(200).json({
+        message: 'Deleted product!'
+    });
+});
 module.exports = router;
-=======
-
-module.exports = router;
->>>>>>> c1b7adb1d293628bf97776ca8d5e5b0c30d9aa2a

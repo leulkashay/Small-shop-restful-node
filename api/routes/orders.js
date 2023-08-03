@@ -1,12 +1,12 @@
 const express = require('express');
 const router = express.Router();
-
+// Handling Get requists to /odrders
 router.get('/', (req, res, next)=>{
     res.status(200).json({
         message: 'Order was created'
     });
 });
-
+// Handling POST requists to /orders 
 router.post('/', (req, res, next)=>{
     res.status(201).json({
         message: 'Order was created'
