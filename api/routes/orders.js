@@ -2,15 +2,10 @@
 const express = require('express');
 const router = express.Router();
 
-router.get("/", (req, res, next) => {
-    res.status(200).json({
-	message: "Handling GET request"
-    });
-});
+const orderController = require('../controller/order');
 
-router.post("/", (req, res, next) => {
-    res.status(201).json({
-	message: "Handling POST reques"
-    });
-});
+router.get("/", orderController.getAllOrder);
+
+router.post("/", orderController.createOrder);
+
 module.exports = router;
