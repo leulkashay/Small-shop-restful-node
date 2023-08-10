@@ -5,8 +5,14 @@ const getAllProduct = (req, res) => {
 };
 
 const createProduct = (req, res) => {
+    const product = {
+	name: req.body.name,
+	price: req.body.price
+    };
+    
     res.status(201).json({
-	message: "create product"
+	message: "create product",
+	createdProduct: product
     });
 };
 

@@ -4,8 +4,14 @@ const getAllOrder = (req, res) => {
     });
 };
 const createOrder = (req, res) => {
+    const order = {
+	productId: req.body.productId,
+	quantity: req.body.quantity
+    };
+    
     res.status(201).json({
-	message: "Create order"
+	message: "Create order",
+	order: order
     });
 };
 
